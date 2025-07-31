@@ -34,12 +34,19 @@ export default function Dashboard() {
               </div>
             </div>
             {/* Analytics Section */}
-            <div className="grid grid-cols-1 md:grid-cols-2 mt-6 gap-6">
+            <div className="flex items-center justify-between">
+              <h1 className="text-2xl font-semibold ">Products Analytics</h1> 
+              <span>details</span>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-3 mt-6 gap-6">
               {/* Chart */}
-              <Chart />
-
+              <div className="col-span-1 lg:col-span-1">
+                <Chart />
+              </div>
               {/* Featured Products */}
-              <FeaturedProducts />
+              <div className="col-span-1 lg:col-span-2">
+                <FeaturedProducts />
+              </div>
             </div>
           </div>
         </div>
