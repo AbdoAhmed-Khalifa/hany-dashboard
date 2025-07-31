@@ -1,3 +1,4 @@
+"use client"
 {
   /*ahmed khaled
 create balance card component
