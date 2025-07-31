@@ -13,7 +13,7 @@ const Chart = () => {
   const maxValue = Math.max(...chartData.map((d) => d.value));
 
   return (
-    <Card className="py-6 gap-y-16">
+    <Card className="py-6 gap-y-12">
       <CardHeader className="flex flex-row items-center justify-between">
         <CardTitle className="text-lg font-semibold">Sold</CardTitle>
         <Button variant="ghost" size="sm" className="text-gray-500">
