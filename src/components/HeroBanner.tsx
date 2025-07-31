@@ -3,7 +3,7 @@ import { Button } from './ui/button';
 
 const HeroBanner = () => {
   return (
-    <Card className="mb-6 border-0 bg-gradient-to-r from-orange-400 to-orange-600 text-white overflow-hidden">
+    <Card className="mb-6 border-0 bg-gradient-to-r h-[400px] from-orange-400 to-orange-600 text-white overflow-hidden">
       <CardContent className="p-8 relative">
         <div className="relative z-10">
           <h1 className="text-4xl font-bold mb-4">EASY SHOPPING EASY!</h1>

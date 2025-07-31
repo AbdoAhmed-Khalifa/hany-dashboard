@@ -44,7 +44,7 @@ const featuredProducts = [
 ];
 const FeaturedProducts = () => {
   return (
-    <Card>
+    <Card >
       <CardHeader className="flex flex-row items-center justify-between">
         <CardTitle className="text-lg font-semibold">
           Featured Products

@@ -8,13 +8,13 @@ const cartItems = [
 const Cart = () => {
   return (
     <Card>
-      <CardHeader className="flex flex-row items-center justify-between pb-3">
+      <CardHeader className="flex flex-row items-center justify-between ">
         <CardTitle className="text-lg font-semibold">My Cart</CardTitle>
         <Button variant="ghost" size="sm" className="text-gray-500">
           See all
         </Button>
       </CardHeader>
-      <CardContent className="space-y-4">
+      <CardContent className="space-y-2">
         {cartItems.map(item => (
           <div key={item.id} className="flex items-center gap-3">
             <div className="w-12 h-12 bg-gray-200 rounded-lg"></div>
