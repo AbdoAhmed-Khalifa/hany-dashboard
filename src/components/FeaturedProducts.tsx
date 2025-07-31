@@ -8,6 +8,11 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+/**
+ * create featured products component
+ *
+ *  @author Ahmed
+ */
 const featuredProducts = [
   {
     id: 1,

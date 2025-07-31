@@ -1,5 +1,10 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from './ui/button';
+/**
+ * create hero banner component
+ *
+ *  @author Ahmed
+ */
 
 /**
  * update HeroBanner structure

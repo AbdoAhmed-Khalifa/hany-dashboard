@@ -5,6 +5,11 @@ const cartItems = [
   { id: 1, name: 'Sneaker', price: 30.0 },
   { id: 2, name: "Men's Hat", price: 30.0 },
 ];
+/**
+ * create cart component
+ *
+ *  @author Ahmed
+ */
 
 /**
  * update cart component add separator
@@ -23,8 +28,8 @@ const Cart = () => {
       </CardHeader>
       <CardContent className="space-y-2">
         {cartItems.map(item => (
-          <>
-            <div key={item.id} className="flex items-center gap-3">
+          <div key={item.id}>
+            <div  className="flex items-center gap-3">
               <div className="w-12 h-12 bg-gray-200 rounded-lg"></div>
               <div className="flex-1">
                 <h4 className="font-medium">{item.name}</h4>
@@ -38,7 +43,7 @@ const Cart = () => {
               </Button>
             </div>
             <hr className="h-px my-3 not-first-of-type:hidden bg-gray-200 border-0 dark:bg-gray-700"></hr>
-          </>
+          </div>
         ))}
 
         <Button className="w-full bg-orange-500 hover:bg-orange-600 mt-4 flex justify-between items-center">

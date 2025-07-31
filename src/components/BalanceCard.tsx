@@ -6,6 +6,11 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from './ui/button';
+/**
+ * create balance card component
+ *
+ *  @author Ahmed
+ */
 
 /**
  * update balance card font size and padding

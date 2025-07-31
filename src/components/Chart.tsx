@@ -9,6 +9,11 @@ const chartData = [
   { day: "Sat", value: 800 },
   { day: "Sun", value: 2500 },
 ];
+/**
+ * create chart component
+ *
+ *  @author Ahmed
+ */
 const Chart = () => {
   const maxValue = Math.max(...chartData.map((d) => d.value));
 

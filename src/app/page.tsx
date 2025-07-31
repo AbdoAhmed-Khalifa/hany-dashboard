@@ -1,13 +1,4 @@
-"use client"
-{
-  /*ahmed khaled
-create balance card component
-create cart component
-create chart component
-create featured products component
-create hero banner component
-*/
-}
+
 import Sidebar from "@/components/Sidebar";
 import Header from "@/components/Header";
 import HeroBanner from "@/components/HeroBanner";
@@ -16,6 +7,11 @@ import FeaturedProducts from "@/components/FeaturedProducts";
 import BalanceCard from "@/components/BalanceCard";
 import Cart from "@/components/Cart";
 
+/**
+ * create dashboard component
+ *
+ *  @author Ahmed
+ */
 export default function Dashboard() {
   return (
     <div className="flex  bg-gray-50">
