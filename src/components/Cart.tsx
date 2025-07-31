@@ -5,6 +5,13 @@ const cartItems = [
   { id: 1, name: 'Sneaker', price: 30.0 },
   { id: 2, name: "Men's Hat", price: 30.0 },
 ];
+
+/**
+ * update cart component add separator
+ *
+ *  @author Abdelrahman
+ */
+
 const Cart = () => {
   return (
     <Card>

@@ -7,6 +7,12 @@ import {
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from './ui/button';
 
+/**
+ * update balance card font size and padding
+ *
+ *  @author Abdelrahman
+ */
+
 const BalanceCard = () => {
   return (
     <Card className="mb-4 h-[150px] overflow-hidden">

@@ -1,6 +1,12 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from './ui/button';
 
+/**
+ * update HeroBanner structure
+ *
+ *  @author Abdelrahman
+ */
+
 const HeroBanner = () => {
   return (
     <Card className="mb-6 border-0 bg-gradient-to-r h-[400px] from-orange-400 to-orange-600 text-white overflow-hidden">
