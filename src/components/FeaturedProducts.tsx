@@ -53,45 +53,61 @@ const FeaturedProducts = () => {
           See all
         </Button>
       </CardHeader>
-      <CardContent className="space-y-4">
-        {featuredProducts.map(product => (
-          <div key={product.id} className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-gray-200 rounded-lg"></div>
-            <div className="flex-1">
-              <h4 className="font-medium">{product.name}</h4>
-              <p className="text-sm text-gray-500">{product.sku}</p>
-            </div>
-            <div className="text-right">
-              <p className="text-sm text-gray-500">{product.sold} Sold</p>
-              <div className="flex items-center gap-1">
-                <span className="text-sm">{product.rating}</span>
-                <Star className="w-3 h-3 fill-yellow-400 text-yellow-400" />
-              </div>
-            </div>
-            <div className="text-right">
-              <p className="font-semibold">${product.price.toFixed(2)}</p>
-              <Button
-                size="sm"
-                variant="outline"
-                className="text-orange-600 border-orange-600 hover:bg-orange-50 bg-transparent">
-                <ShoppingCart className="w-3 h-3 mr-1" />
-                Add to cart
-              </Button>
-            </div>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon" className="w-6 h-6">
-                  <MoreHorizontal className="w-4 h-4" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent>
-                <DropdownMenuItem>Edit</DropdownMenuItem>
-                <DropdownMenuItem>Delete</DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </div>
-        ))}
-      </CardContent>
+      <CardContent className="space-y-2">
+  {featuredProducts.map(product => (
+    <div
+      key={product.id}
+      className="flex items-center justify-between rounded-md hover:bg-gray-50 px-3 py-2"
+    >
+      {/* Product Image */}
+      <div className="flex items-center gap-3 w-1/4 min-w-[150px]">
+        <div className="w-10 h-10 bg-gray-200 rounded-lg shrink-0" />
+        <div>
+          <p className="font-medium">{product.name}</p>
+          <p className="text-xs text-gray-500">{product.sku}</p>
+        </div>
+      </div>
+
+      {/* Sold Count */}
+      <div className="text-sm text-gray-600 w-[60px] text-center">{product.sold} Sold</div>
+
+      {/* Price */}
+      <div className="text-sm font-semibold w-[80px] text-center">${product.price.toFixed(2)}</div>
+
+      {/* Rating */}
+      <div className="flex items-center gap-1 w-[60px] text-sm text-center justify-center">
+        {product.rating}
+        <Star className="w-3 h-3 fill-yellow-400 text-yellow-400" />
+      </div>
+
+      {/* Add to Cart */}
+      <div className="w-[130px] flex justify-end">
+        <Button
+          size="sm"
+          variant="outline"
+          className="text-orange-600 border-orange-600 hover:bg-orange-50 bg-transparent"
+        >
+          <ShoppingCart className="w-4 h-4 mr-1" />
+          Add to cart
+        </Button>
+      </div>
+
+      {/* More Options */}
+      <DropdownMenu>
+        <DropdownMenuTrigger asChild>
+          <Button variant="ghost" size="icon" className="w-6 h-6">
+            <MoreHorizontal className="w-4 h-4" />
+          </Button>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent>
+          <DropdownMenuItem>Edit</DropdownMenuItem>
+          <DropdownMenuItem>Delete</DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
+    </div>
+  ))}
+</CardContent>
+
     </Card>
   );
 };
