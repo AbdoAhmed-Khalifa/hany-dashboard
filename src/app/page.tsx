@@ -1,11 +1,11 @@
-'use client';
-import Sidebar from '@/components/Sidebar';
-import Header from '@/components/Header';
-import HeroBanner from '@/components/HeroBanner';
-import Chart from '@/components/Chart';
-import FeaturedProducts from '@/components/FeaturedProducts';
-import BalanceCard from '@/components/BalanceCard';
-import Cart from '@/components/Cart';
+"use client";
+import Sidebar from "@/components/Sidebar";
+import Header from "@/components/Header";
+import HeroBanner from "@/components/HeroBanner";
+import Chart from "@/components/Chart";
+import FeaturedProducts from "@/components/FeaturedProducts";
+import BalanceCard from "@/components/BalanceCard";
+import Cart from "@/components/Cart";
 
 export default function Dashboard() {
   return (
@@ -34,11 +34,11 @@ export default function Dashboard() {
               </div>
             </div>
             {/* Analytics Section */}
-            <div className="flex items-center justify-between">
-              <h1 className="text-2xl font-semibold ">Products Analytics</h1> 
+            <div className="flex items-center justify-between my-6">
+              <h1 className="text-2xl font-semibold ">Products Analytics</h1>
               <span>details</span>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-3 mt-6 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-3 mt-2 gap-6">
               {/* Chart */}
               <div className="col-span-1 lg:col-span-1">
                 <Chart />
