@@ -1,4 +1,12 @@
-"use client";
+{
+  /*ahmed khaled
+create balance card component
+create cart component
+create chart component
+create featured products component
+create hero banner component
+*/
+}
 import Sidebar from "@/components/Sidebar";
 import Header from "@/components/Header";
 import HeroBanner from "@/components/HeroBanner";
